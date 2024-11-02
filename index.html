@@ -29,13 +29,13 @@
         function calculadora(a, b, op){
             document.write("Calculadora:")
             switch(op){
-                case 'sumar':
+                case 1:
                     return sumar(a,b);
-                case 'resta':
+                case 2:
                       return resta(a, b);
-                case 'multi':
+                case 3:
                     return mutiplicacion(a,b);
-                case 'divi':
+                case 4:
                     return division(a,b);
                 default:
                     console.log("opcion no vaida: ");    
@@ -46,6 +46,7 @@
             let a = parseFloat(prompt("Digite el primer numero: "));
             let b = parseFloat(prompt("Digite el segudo numero: "));
             let op = parseInt(prompt("Digite la opcion que desea: \n1-suma\n2-resta\n3-multiplicacion\n4-division."));
+            document.write("El resultado es: ", calculadora(a, b, op));
         despedida();
     </script>
 </body>
