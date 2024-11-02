@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Funciones
+        function saludo(){
+            console.log("Muy buenas...");
+        }
+        function despedida(){
+            console.log("Por si no nos volvemos a ver: buenos dias, buenas tardes y buenas noches");
+        }
+        function sumar(a, b){
+            return a+b;
+        }
+        function resta(a, b){
+            return a-b;
+        }
+        function mutiplicacion(a, b){
+            return a*b;
+        }
+        function division(a, b){
+            return a/b;
+        }
+        function calculadora(a, b, op){
+            document.write("Calculadora:")
+            switch(op){
+                case 'sumar':
+                    return sumar(a,b);
+                case 'resta':
+                      return resta(a, b);
+                case 'multi':
+                    return mutiplicacion(a,b);
+                case 'divi':
+                    return division(a,b);
+                default:
+                    console.log("opcion no vaida: ");    
+            } 
+        }
+        //principal
+        saludo();
+            let a = parseFloat(prompt("Digite el primer numero: "));
+            let b = parseFloat(prompt("Digite el segudo numero: "));
+            let op = parseInt(prompt("Digite la opcion que desea: \n1-suma\n2-resta\n3-multiplicacion\n4-division."));
+        despedida();
+    </script>
+</body>
+</html>
